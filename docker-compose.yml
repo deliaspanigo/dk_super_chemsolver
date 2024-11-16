@@ -1,24 +1,25 @@
 version: '3.8'
 
 services:
+  nginx:
+    image: legion949/chemsolver_img01_nginx:latest
+    container_name: nginx
+#    volumes:
+#          - ./nginx/html:/usr/share/nginx/html  # Monta los archivos para desarrollo
+    ports:
+      - "80:80"  # Puerto para la página inicial y redirección
+    depends_on:
+      - shiny01
+    restart: always
+    
   shiny01:
-    image: legion949/img_chemsolver:v0.0.1  # Imagen personalizada para Shiny
+    image: legion949/chemsolver_img02_shiny:latest  # Imagen personalizada para Shiny
     container_name: shiny01
     ports:
       - "3838:8080"
     restart: always  # Reiniciar automáticamente en caso de fallos
 
-  nginx:
-    image: nginx:latest
-    container_name: nginx
-    ports:
-      - "80:80"  # Puerto para la página inicial y redirección
-    volumes:
-      - ./home:/usr/share/nginx/html  # Carpeta para la página inicial
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf  # Configuración de Nginx
-    depends_on:
-      - shiny01
-    restart: always
+
     
     
-    
+

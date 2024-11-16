@@ -43,7 +43,7 @@ ui <- dashboardPage(
     sidebarMenu(
       #menuItem("Experimento",   tabName = "page00", icon = icon("dashboard")),
       #br(),
-      menuItem("1) Nomenclatura agrupada",   tabName = "page01", icon = icon("dashboard")),
+      menuItem("1) Nomenclatura",   tabName = "page01", icon = icon("dashboard")),
       menuItem("2) Estequiometría",  tabName = "page02", icon = icon("th")),
       menuItem("3) Calculadora 01", tabName = "page03", icon = icon("th")),
       menuItem("4) Calculadora 02", tabName = "page04", icon = icon("th"))#,

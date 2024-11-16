@@ -1,26 +1,18 @@
-#!/bin/bash
+# Detener todos los contenedores en ejecución
+docker stop $(docker ps -q)
 
-# Stoping all docker containers...
-docker stop $(docker ps -aq)
+# Eliminar todos los contenedores (en ejecución y detenidos)
+docker rm $(docker ps -a -q)
 
-# Removing all docker containers...
-docker rm $(docker ps -aq)
+# Eliminar todas las imágenes
+docker rmi $(docker images -q)
 
-# Removing all docker images...
-docker rmi $(docker images -aq)
-
-# Prune networks...
-docker network prune -f
-
-# Prune volumes...
+# Eliminar volúmenes no utilizados
 docker volume prune -f
 
-# Prune containers...
-docker container prune -f
+# Eliminar redes no utilizadas
+docker network prune -f
 
-# Prune images...
-docker image prune -f
-
-# Prune system...
-docker system prune -f
+# Limpiar el sistema (contenedores, imágenes, volúmenes, redes) de una vez
+docker system prune -a --volumes -f
 

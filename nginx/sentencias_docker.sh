@@ -1,13 +1,15 @@
 # Construir la imagen Docker
-docker build -t chemsolver_img02_shiny:v0.0.1 .
+docker build -t chemsolver_img01_nginx:v0.0.1 .
 
-docker tag chemsolver_img02_shiny:v0.0.1 legion949/chemsolver_img02_shiny:v0.0.1
+docker tag chemsolver_img01_nginx:v0.0.1 legion949/chemsolver_img01_nginx:v0.0.1
 
-docker push legion949/chemsolver_img02_shiny:v0.0.1
+docker push legion949/chemsolver_img01_nginx:v0.0.1
 
-docker tag chemsolver_img02_shiny:v0.0.1 legion949/chemsolver_img02_shiny:latest
+docker tag chemsolver_img01_nginx:v0.0.1 legion949/chemsolver_img01_nginx:latest
 
-docker push legion949/chemsolver_img02_shiny:latest
+
+docker push legion949/chemsolver_img01_nginx:latest
+
 
 ##################################################################################################
 
