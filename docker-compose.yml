@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   nginx:
     image: legion949/chemsolver_img01_nginx:latest
