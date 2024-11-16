@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.intro {
+  background-color: #ecf0f1;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #3498db;
+}
+
+.banner img {
+  max-width: 50%;  /* Definir el tamaño de la imagen como pequeña */
+  height: auto;
+  display: block;
+  margin: 0 auto;  /* Centrar la imagen */
+}
+
+.resources {
+  padding: 40px 0;
+  background-color: #f4f6f7;
+}
+
+.resources h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilos para el botón CHEMSOLVER */
+.chemsolver-button {
+  text-align: center;
+  margin-top: 50px;  /* Espaciado arriba */
+  margin-bottom: 50px;  /* Espaciado abajo */
+}
+
+.btn-chemsolver {
+  display: inline-block;  /* Para hacer que sea un bloque que pueda tener padding */
+  font-size: 36px;  /* Tamaño de texto grande */
+  padding: 20px 40px;  /* Espaciado interno */
+  background-color: #e67e22;  /* Color de fondo Naranja */
+  color: white;  /* Color de texto */
+  text-decoration: none;  /* Eliminar subrayado */
+  border: none;  /* Sin borde */
+  border-radius: 8px;  /* Bordes redondeados */
+  cursor: pointer;  /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease;  /* Transición para el color de fondo */
+}
+
+.btn-chemsolver:hover {
+  background-color: #d35400;  /* Cambio de color al pasar el ratón a un tono más oscuro de naranja */
+}
+
+
+
+.ingresar-text {
+  font-size: 24px;  /* Aumentamos el tamaño del texto */
+  color: #2c3e50;  /* Mantener color oscuro */
+  margin-top: 10px;  /* Espaciado superior */
+  font-weight: bold;  /* Negrita para el texto */
+}

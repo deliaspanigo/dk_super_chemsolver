@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>ChemSolver - Portal de Conocimiento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Bienvenido al Proyecto</h1>
-  <p>Haz clic en el siguiente enlace para abrir Shiny:</p>
-  <a href="/shiny01">Ir a Shiny01</a>
+  <!-- Cabecera -->
+  <header>
+    <div class="container">
+      <h1>Bienvenido a ChemSolver</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Fórmulas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Introducción -->
+  <section class="intro">
+    <div class="container">
+      <h2>Química Inorgánica con Inteligencia Artificial</h2>
+    </div>
+  </section>
+
+  <!-- Botón CHEMSOLVER que redirige -->
+  <section class="chemsolver-button">
+    <div class="container">
+      <!-- Enlace convertido en un botón -->
+      <a href="/shiny01" class="btn-chemsolver">ChemSolver IA</a>
+      <p class="ingresar-text">Ingresar</p>
+    </div>
+  </section>
+
+  <!-- Imagen de Banner -->
+  <section class="banner">
+    <div class="container">
+      <img src="quimica-banner.jpeg" alt="Imagen de laboratorio químico">
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section class="resources">
+    <div class="container">
+      <h3>Recursos Populares</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Calculadora Química</h4>
+          <p>Realiza cálculos químicos de forma rápida y precisa.</p>
+        </div>
+        <div class="card">
+          <h4>Tabla Periódica Interactiva</h4>
+          <p>Explora los elementos químicos y sus propiedades.</p>
+        </div>
+        <div class="card">
+          <h4>Artículos y Videos</h4>
+          <p>Lee sobre temas avanzados de química y experimentos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Química 101. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
 
