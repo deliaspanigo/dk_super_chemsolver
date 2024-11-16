@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Stoping all docker containers...
+docker stop $(docker ps -aq)
+
+# Removing all docker containers...
+docker rm $(docker ps -aq)
+
+# Removing all docker images...
+docker rmi $(docker images -aq)
+
+# Prune networks...
+docker network prune -f
+
+# Prune volumes...
+docker volume prune -f
+
+# Prune containers...
+docker container prune -f
+
+# Prune images...
+docker image prune -f
+
+# Prune system...
+docker system prune -f
+

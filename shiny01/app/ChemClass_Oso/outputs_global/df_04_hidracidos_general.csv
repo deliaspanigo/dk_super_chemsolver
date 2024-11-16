@@ -1,0 +1,6 @@
+"orden_data01";"orden_hidracido";"atomic_number";"name";"symbol";"valence";"roman";"chem_form01";"chem_form02";"nomen_01_tradicional";"nomen_02_stock";"nomen_03_sistematica";"chem_form03";"web_selector"
+11;1;9;"Flúor";"F";1;"II";"F2H1";"F_{2}H";"Ácido Fluorhídrico";"Fluoruro de Hidrógeno";"MonoFluoruro de DiHidrógeno";"F_{2} + H_{2} \rightarrow F_{2}H";"9 - F - Flúor"
+19;2;16;"Azufre";"S";2;"II";"S1H1";"SH";"Ácido Sulfhídrico";"Sulfuro de Hidrógeno";"MonoSulfuro de MonoHidrógeno";"2S + H_{2} \rightarrow 2SH";"16 - S - Azufre"
+22;3;17;"Cloro";"Cl";1;"II";"Cl2H1";"Cl_{2}H";"Ácido Clorhídrico";"Cloruro de Hidrógeno";"MonoCloruro de DiHidrógeno";"Cl_{2} + H_{2} \rightarrow Cl_{2}H";"17 - Cl - Cloro"
+58;4;35;"Bromo";"Br";1;"II";"Br2H1";"Br_{2}H";"Ácido Bromhídrico";"Bromuro de Hidrógeno";"MonoBromuro de DiHidrógeno";"2Br + H_{2} \rightarrow Br_{2}H";"35 - Br - Bromo"
+92;5;53;"Yodo";"I";1;"II";"I2H1";"I_{2}H";"Ácido Yoduro";"Yoduro de Hidrógeno";"MonoYoduro de DiHidrógeno";"2I + H_{2} \rightarrow I_{2}H";"53 - I - Yodo"

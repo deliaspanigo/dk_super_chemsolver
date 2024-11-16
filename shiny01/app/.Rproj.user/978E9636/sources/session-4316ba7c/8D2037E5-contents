@@ -1,0 +1,7 @@
+
+
+
+aver <- colnames(mtcars)
+names(aver) <- colnames(mtcars)
+
+unique(aver)
