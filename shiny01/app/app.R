@@ -48,8 +48,8 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     tags$head(
-      #tags$script(src="www/MathJax-2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
-      tags$script(src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
+      tags$script(src="www/MathJax-2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
+      #tags$script(src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
       tags$script(HTML(js))
     ),
     withMathJax(),
