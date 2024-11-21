@@ -11,10 +11,6 @@ library("mathjaxr")
 library("stringi")
 })
 
-# Specify the application port
-options(shiny.host = "0.0.0.0")
-options(shiny.port = 8080)
-
 source(file = "global.R")
 
 # Definir el directorio donde están los archivos .R
@@ -148,6 +144,4 @@ server <- function(input, output, session) {
 }
 
 # Ejecutar la aplicación
-shinyApp(ui = ui, server = server)
-
-
+shiny::runApp(list(ui = ui, server = server), port = 3838)
