@@ -12,7 +12,7 @@ WORKDIR /srv/shiny-server/
 # Copia los archivos de tu aplicación en el contenedor
 COPY app ./
 
-# Expone el puerto 3838
+# Expone el puerto 8080
 EXPOSE 8080
 
 # Ejecuta la aplicación Shiny

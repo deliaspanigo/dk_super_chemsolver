@@ -92,7 +92,7 @@ module_page01_nomenclatura_01_server <- function(id, sui_family_chem){
       sui_symbol <- reactive({ 
         the_symbol <-as.character(input$sui_symbol) 
         
-        print(the_symbol)
+        #print(the_symbol)
         the_symbol
         })
 

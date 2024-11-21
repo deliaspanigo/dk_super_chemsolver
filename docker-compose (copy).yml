@@ -1,0 +1,12 @@
+services:
+  shiny01:
+    image: legion949/chemsolver_img02_shiny:latest  # Imagen personalizada para Shiny
+    container_name: shiny01
+    ports:
+      - "3838:8080"
+    restart: always  # Reiniciar automáticamente en caso de fallos
+
+
+    
+    
+

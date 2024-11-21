@@ -11,6 +11,11 @@ library("mathjaxr")
 library("stringi")
 })
 
+# Config
+options(shiny.port = 8080)
+options(shiny.host = "0.0.0.0")
+
+# Global
 source(file = "global.R")
 
 # Definir el directorio donde están los archivos .R
@@ -48,8 +53,8 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     tags$head(
-      #tags$script(src="www/MathJax-2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
-      tags$script(src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
+      tags$script(src="www/MathJax-2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
+      #tags$script(src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"),
       tags$script(HTML(js))
     ),
     withMathJax(),
@@ -144,4 +149,6 @@ server <- function(input, output, session) {
 }
 
 # Ejecutar la aplicación
-shiny::runApp(list(ui = ui, server = server), port = 3838)
+shiny::runApp(list(ui = ui, server = server))
+
+
