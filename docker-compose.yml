@@ -1,15 +1,4 @@
 services:
-  nginx:
-    image: legion949/chemsolver_img01_nginx:latest
-    container_name: nginx
-#    volumes:
-#          - ./nginx/html:/usr/share/nginx/html  # Monta los archivos para desarrollo
-    ports:
-      - "80:80"  # Puerto para la página inicial y redirección
-    depends_on:
-      - shiny01
-    restart: always
-    
   shiny01:
     image: legion949/chemsolver_img02_shiny:latest  # Imagen personalizada para Shiny
     container_name: shiny01
