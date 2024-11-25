@@ -157,7 +157,7 @@ server <- function(input, output, session) {
 # Ejecutar la aplicación
 #shiny::runApp(list(ui = ui, server = server))
 
-options(shiny.port = 8080)
+options(shiny.port = 3838)
 options(shiny.host = "0.0.0.0")
 
 auth0::shinyAppAuth0(ui = ui, server = server)
