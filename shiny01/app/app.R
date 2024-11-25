@@ -1,5 +1,6 @@
 # Librerias
 suppressPackageStartupMessages({
+  
 library("openxlsx")
 library("shiny")
 library("shinydashboard")
@@ -9,11 +10,16 @@ library("Ryacas")
 library("Ryacas0")
 library("mathjaxr")
 library("stringi")
+library("auth0")
 })
 
 # Config
-options(shiny.port = 8080)
-options(shiny.host = "0.0.0.0")
+#options(shiny.port = 8080)
+#options(shiny.host = "0.0.0.0")
+#options(shiny.port = NULL)
+#options(shiny.host = NULL)
+#options(shiny.trace = TRUE)
+
 
 # Global
 source(file = "global.R")
@@ -149,6 +155,10 @@ server <- function(input, output, session) {
 }
 
 # Ejecutar la aplicación
-shiny::runApp(list(ui = ui, server = server))
+#shiny::runApp(list(ui = ui, server = server))
 
+options(shiny.port = 8080)
+options(shiny.host = "0.0.0.0")
+
+auth0::shinyAppAuth0(ui = ui, server = server)
 

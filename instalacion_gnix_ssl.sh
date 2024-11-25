@@ -1,11 +1,17 @@
 
 
 sudo apt update
-
-
+#
 sudo apt install certbot python3-certbot-nginx -y
+#
+sudo systemctl restart nginx
+#
+sudo systemctl status nginx
+#
 
+sudo cat /etc/nginx/sites-available/default
 
+sudo nano /etc/nginx/sites-available/default
 
 ###############################################################
 # # sudo nano /etc/nginx/sites-available/default
@@ -56,6 +62,7 @@ server {
 }
 
 ################################################################################
+
 
 
 

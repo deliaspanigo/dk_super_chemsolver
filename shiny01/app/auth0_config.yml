@@ -1,0 +1,8 @@
+name: "ChemSolver"
+auth0_config:
+  api_url: "chemsolver.us.auth0.com"
+  client_id: "SgZPvIh1nPlDcD5p2fIbIT5bbTfCsF98"
+  client_secret: "cXPzNQpJcIcLQzoEkGvLR5clIyvvZe_xVV-B1bN0qoKN2CqtaNUyfRtNN7Mi29nm"
+shiny_config:
+  remote_url: "http://0.0.0.0:8080"
+
